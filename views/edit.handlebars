@@ -1,0 +1,18 @@
+<div class="container">
+   <form method="POST">
+            {{#if message}}
+               <div class="alert alert-{{status}}">{{{message}}}</div>
+            {{/if}}
+            <h1 class="h3 mb-3 fw-normal">Dainos redagavimas</h1>
+            <div class="form-floating">
+                <input type="text"  name="song_Name" class="form-control" placeholder="name@example.com" value="{{song_Name}}">
+                <label for="floatingInput">Dainos pavadinimas</label>
+               
+            </div>
+            <div class="form-floating">
+                <input type="text" name="album_Name" class="form-control" placeholder="Adresas" value="{{album_Name}}">
+                <label for="floatingPassword">Albumo pavadinimas</label>
+            </div>
+            <button  class="w-100 btn btn-lg btn-primary" type="submit">Redaguoti</button>
+        </form>
+</div>

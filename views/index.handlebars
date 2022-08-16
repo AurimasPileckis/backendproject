@@ -1,0 +1,30 @@
+<div class="container bg-white">
+    {{#if message}}
+    <div class="alert alert-{{status}}">{{message}}</div>
+    {{/if}}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Dainos pavadinimas</th>
+            <th>Albumo pavadinimas</th>
+            <th>Veiksmai</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each songs}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{song_Name}}</td>
+            <td>{{song_Album}}</td>
+            <td>
+                <a class="w-100 btn btn-lg btn-danger" href="/delete/{{id}}">Istrinti</a>
+                <a class="w-100 btn btn-lg btn-primary" href="/edit/{{id}}">Redaguoti</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table><a href="/new" class="w-100 btn btn-lg btn-success">Prideti naują dainą</a>
+</table><a href="/playlists" class="w-100 btn btn-lg btn-primary">Playlists</a>
+          
+</div>

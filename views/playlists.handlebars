@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin-top: 6px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+   <form method="POST">
+            {{#if message}}
+               <div class="alert alert-{{status}}">{{{message}}}</div>
+            {{/if}}
+            <h1 class="h3 mb-3 fw-normal">Playlists</h1>
+            <button class="w-100 btn btn-lg btn-primary">Chill music</button>
+            <button class="w-100 btn btn-lg btn-primary">Hip-Hop music</button>
+            <button class="w-100 btn btn-lg btn-success" type="submit">+Add new playlist</button>
+        </form>
+</div>
+    
+</body>
+</html>
