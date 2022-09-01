@@ -1,0 +1,143 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css');
+
+body {
+	background: #fefae0;
+}
+
+.articles { 
+	column-count: 4;
+	column-gap: 0.1em;
+	padding: 15px;
+  }
+  
+  .card {
+	background-color: #fefae0;
+	display: inline-block;
+	margin: 0 0 1em;
+	width: 75%;
+	overflow: hidden;
+	width: 310px;
+	margin: 0 10px 20px;
+	--bs-card-spacer-y: 0.4rem;
+    --bs-card-spacer-x: 0;
+  }
+
+img {
+	width: 310px;
+	background-size: cover;
+
+}
+
+h3, h5, h6 {
+	margin-left: 5px;
+}
+
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px
+}
+
+
+.form-control {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input {
+	border: none;
+	width: 100%;
+	height: 40px;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+
+
+.button1{
+	margin-top: 8px;
+}
+.input-register {
+	width: 30%
+}
+.register-form {
+	display: grid;
+}
+.btn-reg, .btn-log{
+	width: 30%;
+	margin-left: 0px;
+}
+
+
+.admin-edit,
+.admin-delete
+ {
+	width: 70px;
+	height: 20px;
+	background-color: #d6ccc2;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 14px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #fff
+}
+.admin-delete {
+	margin-top: 3px;
+	border: none;
+}
+.read-more {
+	width: 100px;
+	height: 20px;
+	background-color: #d6ccc2;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 14px;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	text-decoration: none;
+	color: #fff
+}
+.button {
+	width: 100px;
+	height: 40px;
+	background-color: #d6ccc2;
+	border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 18px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	margin-top: 6px;
+	margin-left: 7px;
+}
+.filter {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center
+}
+textarea {
+	margin-top: 5px;
+	width: 100%;
+	height: 7rem;
+}
+.nav-link {
+	color: red;
+}
+.plot {
+	margin-top: 12px;
+}
